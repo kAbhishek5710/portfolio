@@ -10,7 +10,9 @@ export default function Education() {
   return (
     <div>
       <div className="flex justify-center">
-        <h1 className="text-4xl font-medium text-center underline text-slate-200 my-20">EDUCATION</h1>
+        <h1 className="text-4xl font-medium text-center shadow-lg shadow-green-400 rounded-lg p-3 text-gray-200 my-20">
+          EDUCATION
+        </h1>
       </div>
       <div className="m-3">
         <VerticalTimeline>
@@ -22,13 +24,7 @@ export default function Education() {
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<IoMdSchool />}
           >
-            <h3 className="vertical-timeline-element-title font-bold">
-              JSS Academy of Technical Education, Noida
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Noida, Uttar Pradesh
-            </h4>
-            <div className="flex justify-between items-center mt-8">
+            <div className="flex justify-between items-center">
               <div className="flex flex-col">
                 <span className="font-semibold text-md">
                   Bachelor of Technology (BTech)
@@ -38,9 +34,15 @@ export default function Education() {
                 </span>
               </div>
               <div className=" flex justify-between items-center">
-                <span>Grade - 8.12</span>
+                <span>Grade - 8.12 CGPA</span>
               </div>
             </div>
+            <h3 className="vertical-timeline-element-title font-bold mt-8">
+              JSS Academy of Technical Education, Noida
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Noida, Uttar Pradesh
+            </h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -50,13 +52,7 @@ export default function Education() {
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<IoMdSchool />}
           >
-            <h3 className="vertical-timeline-element-title font-bold">
-              S R Public School
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Orai, Uttar Pradesh
-            </h4>
-            <div className="flex justify-between items-center mt-8">
+            <div className="flex justify-between items-center">
               <div className="flex flex-col">
                 <span className="font-semibold text-md">
                   Senior Secondary Education
@@ -67,6 +63,12 @@ export default function Education() {
                 <span>Grade - 96 %</span>
               </div>
             </div>
+            <h3 className="vertical-timeline-element-title font-bold mt-8">
+              S R Public School
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Orai, Uttar Pradesh
+            </h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -76,13 +78,7 @@ export default function Education() {
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<IoMdSchool />}
           >
-            <h3 className="vertical-timeline-element-title font-bold">
-              S R Public School
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Orai, Uttar Pradesh
-            </h4>
-            <div className="flex justify-between items-center mt-8">
+            <div className="flex justify-between items-center">
               <div className="flex flex-col">
                 <span className="font-semibold text-md">
                   Secondary School Education
@@ -93,6 +89,12 @@ export default function Education() {
                 <span>Grade - 93 %</span>
               </div>
             </div>
+            <h3 className="vertical-timeline-element-title font-bold mt-8">
+              S R Public School
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Orai, Uttar Pradesh
+            </h4>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
