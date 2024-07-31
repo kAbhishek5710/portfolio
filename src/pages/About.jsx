@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../assets/Abhishek.png";
 import Typewriter from "typewriter-effect";
+import SocialMedia from "../components/SocialMedia";
 
 export default function About() {
   return (
@@ -30,8 +31,11 @@ export default function About() {
             thrive on building robust, efficient, and user-friendly
             applications.
           </p>
-          <button className="border-slate-500 shadow-md bg-red-600 text-gray-300 border p-1 rounded-lg mt-5 px-5 font-semibold">
-            Contact
+          <SocialMedia />
+          <button className="border-slate-500 shadow-md bg-red-600 text-gray-300 border p-1 py-2 rounded-lg px-5 font-semibold hover:text-white">
+            <a href="https://drive.google.com/file/d/16hjSWt2NFux7R8K9pajIOVbF7lG4fZgh/view?usp=drive_link" target="_blank">
+              View Resume
+            </a>
           </button>
         </div>
         <div>

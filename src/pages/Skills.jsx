@@ -15,7 +15,7 @@ import sql from "../assets/skills/database.png";
 
 export default function Skills() {
   return (
-    <div className="mt-20 backdrop-brightness-75 mx-8 md:mx-20 shadow-lg shadow-red-200">
+    <div className="mt-20 backdrop-brightness-75 mx-8 md:mx-20 shadow-lg shadow-red-200 ">
       <div className="flex justify-center font-3xl">
         <h1 className="text-4xl font-medium text-center shadow-lg shadow-green-400 rounded-lg p-3 text-gray-200 mt-20">
           Skills
