@@ -13,6 +13,21 @@ import bootstrap from "../assets/skills/bootstrap.jpg";
 import C from "../assets/skills/C.jpg";
 import sql from "../assets/skills/database.png";
 
+const skills = [
+  { img: C, name: "C" },
+  { img: java, name: "JAVA" },
+  { img: html, name: "HTML" },
+  { img: css, name: "CSS" },
+  { img: javascript, name: "JavaScript" },
+  { img: react, name: "ReactJS" },
+  { img: nodejs, name: "NodeJS" },
+  { img: express, name: "ExpressJS" },
+  { img: mongodb, name: "MongoDB" },
+  { img: sql, name: "SQL" },
+  { img: tailwind, name: "Tailwind CSS" },
+  { img: bootstrap, name: "Bootstrap" },
+];
+
 export default function Skills() {
   return (
     <div className="mt-20 backdrop-brightness-75 mx-8 md:mx-20 shadow-lg shadow-red-200 ">
@@ -22,18 +37,9 @@ export default function Skills() {
         </h1>
       </div>
       <div className="flex justify-center flex-wrap gap-10 lg:gap-20 items-center m-20 max-w-sm md:max-w-xl lg:max-w-6xl backdrop-brightness-75 pb-12 md:px-18 md:pb-16 lg:px-32 lg:pb-20  mx-auto">
-        <SkillRep img={C} techName={"C"} />
-        <SkillRep img={java} techName={"JAVA"} />
-        <SkillRep img={html} techName={"HTML"} />
-        <SkillRep img={css} techName={"CSS"} />
-        <SkillRep img={javascript} techName={"JavaScript"} />
-        <SkillRep img={react} techName={"ReactJS"} />
-        <SkillRep img={nodejs} techName={"NodeJS"} />
-        <SkillRep img={express} techName={"ExpressJS"} />
-        <SkillRep img={mongodb} techName={"MongoDB"} />
-        <SkillRep img={sql} techName={"SQL"} />
-        <SkillRep img={tailwind} techName={"Tailwind CSS"} />
-        <SkillRep img={bootstrap} techName={"Bootstrap"} />
+        {skills.map((skill) => (
+          <SkillRep obj={skill} />
+        ))}
       </div>
     </div>
   );
